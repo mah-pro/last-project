@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+font-family: Montserrat;
+box-sizing: border-box;
+color: #333;
+}
+
+.home-page{
+background-color:  #e1b382;
+box-shadow:  5px 7px #c89666;
+border-radius: 4px;
+position: relative;
+position: fixed;
+left: 50%;
+top: 50%;
+width: 40vw;
+transform: translate(-50%, -50%);
+border: solid #2d545e;
+}
+
+body {
+font-size: 16px;
+}
+
+.card {
+background-color: #e1b382;
+box-shadow:  5px 7px #c89666;
+border-radius: 4px;
+padding: 1rem;
+position: relative;
+position: fixed;
+left: 50%;
+top: 50%;
+width: 25vw;
+transform: translate(-50%, -50%);
+border: solid 1px #2d545e;
+}
+
+.cardHeader {
+background: #e1b382;
+box-shadow:  5px 7px #12343b;
+padding: 0.75rem 1.5rem;
+border-radius: 2px;
+text-transform: uppercase;
+transform: skewY(-4deg);
+font-size: 1.1rem;
+font-weight: bold;
+display: inline-block;
+position: absolute;
+top: -1rem;
+left: -0.75rem;
+}
+
+.cardBody {
+margin-top: 2rem;
+}
+
+.inputGroup {
+margin-bottom: 1rem;
+}
+
+label {
+font-size: 0.9rem;
+}
+
+input {
+border: none;
+padding: 0.5rem 0.1rem;
+width: 100%;
+border-radius: 2px;
+border-bottom: 1px solid #eee;
+transition: all 0.5s;
+}
+
+input:focus {
+border-bottom: 1px solid #ccc;
+}
+
+button {
+    border: 2px solid white;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bolder;
+    border-radius: 5px;
+    opacity: .5;
+    transition: .3s;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+button:hover {
+    border: 2px solid #104F55;
+    background-color: rgba(365,365,365,0.5);
+    cursor: pointer;
+    color: #104F55;
+    opacity: .8;
+    transition: .3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+}
+
+.center-container :active{
+    left: 0;
+}
+
+.center-container svg{
+    font-size: 50px;
+}
+
+svg {
+    font-size: 25px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.click-button {
+    border: 2px solid white;
+    background: transparent;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: bolder;
+    border-radius: 5px;
+    opacity: .5;
+    transition: .3s;
+    margin: 5px;
+    box-shadow: 5px 5px #12343b;
+}
+
+.click-button:hover {
+    border: 2px solid #104F55;
+    background-color: rgba(365,365,365,0.5);
+    cursor: pointer;
+    color: #104F55;
+    opacity: .8;
+    transition: .3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.body-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #12343b;
+}
+
+
+.chatrooms {
+margin-top: 1rem;
+}
+
+.chatroom {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 1rem;
+}
+
+.join {
+    border-radius: 5px;
+padding: 0.25rem 1rem;
+border-radius: 2px;
+}
+
+a {
+text-decoration: none;
+color: #333;
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+    margin: 0;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Utilisez 100% de la hauteur parente */
+}
+
+.content {
+	position: relative;
+}
+h2{
+    background: white;
+    box-shadow:  5px 7px #12343b;
+    border-radius: 10px;
+}
+.content h2 {
+	color: #fff;
+	font-size: 3em;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px #c89666;
+}
+
+.content h2:nth-child(2) {
+	color: #2d545e;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
+
+.circular-profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #12343b;
+}
+
+#image{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.enlarged {
+    transform: scale(1.5); /* You can adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
